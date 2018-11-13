@@ -30,14 +30,14 @@ public class xogo {
         for (int i = 0; i < intentos; i++) {
             respuesta = Integer.parseInt(JOptionPane.showInputDialog("Adivinar numero entre 1 y 50:"));
             if (respuesta > num) {
-                JOptionPane.showMessageDialog(null, "El número es menor");
+                JOptionPane.showMessageDialog(null, "Incorrecto. Es menor");
             } else if (respuesta < num) {
-                JOptionPane.showMessageDialog(null, "El número es mayor");
+                JOptionPane.showMessageDialog(null, "Incorrecto. Es mayor");
             } else {
                 JOptionPane.showMessageDialog(null, "Respuesta correcta");
                 break;
             }
         }
-        JOptionPane.showMessageDialog(null, "Se han acabado los intentos");
+        JOptionPane.showMessageDialog(null, "No más intentos");
     }
 }
